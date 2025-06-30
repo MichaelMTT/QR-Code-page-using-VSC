@@ -3,8 +3,8 @@
     --clr-slate300: hsl(212, 45%, 89%);
     --clr-slate500: hsl(216, 15%, 48%);
     --clr-slate900: hsl(218, 44%, 22%);
-    --border-radius: 1rem;
-    --max-box-width: 15.625rem;
+    --border-radius: clamp(0rem, 1vw, 1rem);
+    --max-box-width: clamp(15rem, 1vw, 20rem);
     --box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -46,13 +46,13 @@ h1{
     font-weight: 700;
     color: var(--clr-slate900);
     margin: 1.25rem 0 1rem;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
 }
 
 h2{
     font-weight: 500;
     color: var(--clr-slate500);
     margin: 0 0 1rem; 
-    font-size: .9375rem;
-    line-height: 1.2;
+    font-size: clamp(0rem, 0.9375vw, 1rem);
+    line-height: clamp(1.2, 2vw, 1.5);
 }
